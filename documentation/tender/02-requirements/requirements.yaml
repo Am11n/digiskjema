@@ -1,0 +1,1265 @@
+requirements:
+- id: REQ-B1-0001
+  source: Bilag 1 / tabell 1 / rad 1
+  type: AV
+  text: Kunden har behov for en løsning som bidrar til oppfyllelse av formål, omfanget og effektmålene, men samtidig vise
+    forretningsmessig og funksjonalitetsmessig fleksibilitet ved oppstart og over tid.
+  response_requirement: Leverandøren skal gi en overordnet beskrivelse av tilbudt løsning, samt beskrive sin forståelse av
+    anskaffelsens formål, omfang og effektmål herunder hvordan Leverandøren skal bidra for å oppnå dette.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0002
+  source: Bilag 1 / tabell 2 / rad 1
+  type: V
+  text: Leverandøren skal holde seg orientert om regelverksendringer og ha en strategi for å holde løsningen oppdatert til
+    enhver tid.
+  response_requirement: Beskriv hvordan dette er ivaretatt.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0003
+  source: Bilag 1 / tabell 4 / rad 1
+  type: V
+  text: Utvalg og presentasjon av informasjon og funksjoner (verktøy), må kunne tilpasses den enkeltes behov og arbeidssituasjon.
+    Brukergrensesnittet må være oversiktlig og arbeid med flere skjemaer/moduler samtidig må fremstå sømløst for bruker.
+  response_requirement: Beskriv hvilke konkrete konfigurasjonsmuligheter den enkelte ansatte har (roller, dashboard, aktivitetsvisning,
+    varslingsinnstillinger) Hvordan løsningen støtter arbeid med flere skjemaer eller moduler samtidig, inkludert mekanismer
+    for sømløs navigasjon Eksempler eller skjermbilder som illustrerer hvordan dette fungerer i praksis.
+  acceptance_criteria: []
+  tags:
+  - security
+- id: REQ-B1-0004
+  source: Bilag 1 / tabell 4 / rad 2
+  type: AV
+  text: Løsningen skal være tilpasset alle digitale flater, være responsiv og støtte ulike nettlesere.
+  response_requirement: Beskriv hvilke enheter og plattformer som offisielt støttes (mobil, nettbrett, PC). Hvilke nettlesere
+    og versjoner som er testet og støttes. Eventuelle begrensninger, samt hvordan disse håndteres
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0005
+  source: Bilag 1 / tabell 4 / rad 3
+  type: V
+  text: Løsningen skal guide sluttbruker logisk gjennom prosessen og samtidig redusere risiko for feilregistrering. Feilmeldinger
+    og hjelpetekster skal være enkle å forstå, gi forklaringer som lar bruker korrigere feil, og sikre at registrerte data
+    er korrekte og entydige.
+  response_requirement: 'Leverandøren skal beskrive hvordan løsningen guider sluttbruker gjennom skjemaprosessen, inkludert:
+    hvordan trinnvis guiding og logisk flyt er realisert i løsningen hvordan feilmeldinger, hjelpetekster og validering presenteres
+    for sluttbruker Forebygging av feilregistrering sikrer entydig dialog og korrekt datainnsamling, inkludert eksempler på
+    typisk valideringslogikk, feilmeldinger og hjelpetekster'
+  acceptance_criteria: []
+  tags:
+  - observability
+  - ops
+  - sla
+- id: REQ-B1-0006
+  source: Bilag 1 / tabell 4 / rad 4
+  type: A
+  text: Løsningen skal være tilgjengelig på norsk. Dette gjelder både brukergrensesnitt og standard tekster.
+  response_requirement: Leverandøren skal bekrefte at hele løsningen – inkludert brukergrensesnitt, standardtekster, valideringsmeldinger
+    og administrasjonsgrensesnitt – er tilgjengelig på norsk, og beskrive eventuelle unntak.
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - uu
+- id: REQ-B1-0007
+  source: Bilag 1 / tabell 4 / rad 5
+  type: AV
+  text: Løsningen må tilfredsstille krav om universell utforming i tråd med gjeldende WCAG standard.
+  response_requirement: Beskriv hvilke WCAG-versjoner og -nivåer-løsningen oppfyller. Hvordan tilgjengelighet testes og dokumenteres
+    (verktøy, revisjoner og brukertester) Eksempler på tilgjengelighets-funksjoner i løsningen. Eventuelle avvik fra WCAG
+    og plan for lukking.
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - audit
+  - logging
+  - uu
+- id: REQ-B1-0008
+  source: Bilag 1 / tabell 4 / rad 6
+  type: AV
+  text: Utviklede skjema i løsningen skal kunne tilbys på ulike språk og så enkelt som mulig.
+  response_requirement: Beskriv hvordan språkhåndtering er realisert (manuell, KI-basert, ekstern integrasjon osv.) Hvordan
+    oversettelser kan redigeres og kvalitetssikres før publisering Hvilke språk som støttes i dag, og hvilke som eventuelt
+    er planlagt Beskrivelse av eventuell KI-funksjonalitet knyttet til automatisk oversetting
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0009
+  source: Bilag 1 / tabell 5 / rad 1
+  type: AV
+  text: Løsningen skal ha funksjon/register for oppretting, sletting, deaktivering og administrasjon av roller med tilhørende
+    skrive-, slette- og redigeringsrettigheter. Kunden skal selv kunne opprette brukere og gi tilganger til ulike roller med
+    tilhørende rettigheter.
+  response_requirement: 'Besvarelsen skal inkludere: Oppretting av bruker og tildeling av roller – Hvordan brukere registreres
+    og gis rettigheter. Endring av roller og tilganger – Hvordan roller administreres og hvilke rettighetstyper som kan styres.
+    Deaktivering og sletting av brukere – Hvordan brukere deaktiveres/slettes og hvordan dette påvirker tilganger. Eventuelle
+    begrensninger – Kort beskrivelse av hva som ikke er støttet. Skjermbilder eller eksempler kan inkluderes dersom det gir
+    en klarere forklaring, men er ikke påkrevd.'
+  acceptance_criteria: []
+  tags:
+  - gdpr
+  - privacy
+  - security
+- id: REQ-B1-0010
+  source: Bilag 1 / tabell 6 / rad 1
+  type: V
+  text: 'Løsningen skal støtte både en-kommune og fler-kommune bruk: Det skal være mulig å opprette ett skjema sentralt som
+    deretter distribueres til alle kommunene, og driftes og vedlikeholdes som ett og samme skjema. Det skal også være mulig
+    for enkeltkommuner å opprette, drifte og vedlikeholde egne skjemaer uavhengig av det sentrale skjemaet. Begrepet «sentralt»
+    kan knyttes til Indigo IKT, men kan også være at en eller flere av kommunene fungerer som «sentral».'
+  response_requirement: 'Leverandøren bes beskrive: Hvordan ett sentralt skjema kan opprettes, distribueres og driftes som
+    ett felles skjema for alle kommuner. Hvordan enkeltkommuner kan opprette, drifte og vedlikeholde egne skjemaer uavhengig
+    av sentral løsning. Lisensmodell for en- og flerkommunebruk, inkludert eventuelle begrensninger (antall skjema, brukere,
+    kommuner) og hvordan sentral drift påvirker lisensbehov.'
+  acceptance_criteria: []
+  tags:
+  - observability
+  - ops
+  - security
+  - sla
+- id: REQ-B1-0011
+  source: Bilag 1 / tabell 6 / rad 2
+  type: V
+  text: Det kan være behov for at enkeltpersoner i en kommune kan gå inn i et flerkommuneskjema og gjøre endringer for sin
+    eller andre kommuners skjema.
+  response_requirement: Leverandøren skal beskrive hvordan enkeltpersoner kan redigere flerkommuneskjema, inkl. tilgangsstyring
+    via AD-grupper, skjemagrupper eller tilsvarende mekanismer.
+  acceptance_criteria: []
+  tags:
+  - security
+- id: REQ-B1-0012
+  source: Bilag 1 / tabell 6 / rad 3
+  type: V
+  text: Det er behov for at publikum ikke sender skjema til feil kommune i en fler-kommune løsning.
+  response_requirement: Leverandøren skal beskrive hvordan løsningen sikrer at sluttbruker alltid sendes til riktig kommune
+    i et flerkommuneskjema og hvordan feilregistrering forhindres.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0013
+  source: Bilag 1 / tabell 6 / rad 4
+  type: V
+  text: Det er behov for at et fler-kommune skjema kan ha ulikt endepunkt (Sak/arkiv løsning eller tilsvarende endepunkt).
+  response_requirement: Leverandøren skal beskrive hvordan flerkommuneskjema kan ha ulike endepunkter (f.eks. sak/arkiv, fagsystem)
+    for hver kommune, og hvordan dette konfigureres.
+  acceptance_criteria: []
+  tags:
+  - archive
+  - integration
+- id: REQ-B1-0014
+  source: Bilag 1 / tabell 6 / rad 5
+  type: V
+  text: 'Det er behov for at kommunene som bruker et fler-kommune skjema har mulighet for å: tilpasse til egen grafisk profil
+    ha fleksibilitet ift. plassering og visuell fremstilling av felter i skjema legge til knapper, menytekster ha mest mulig
+    standardisering og felles feltbruk i et flerkommunalt skjema, men samtidig mulighet for noe avvik for en/flere kommuner.'
+  response_requirement: 'Leverandøren skal beskrive hvordan kommuner kan: tilpasse skjema til egen grafisk profil endre layout,
+    plassering av felter, knapper og menytekster samtidig ha standardiserte og felles felter i flerkommuneskjema eventuelle
+    begrensninger for en- og flerkommuneskjema'
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0015
+  source: Bilag 1 / tabell 6 / rad 6
+  type: V
+  text: Det vil være behov for å bruke ulike skjemakomponenter i et fler-kommuneskjema.
+  response_requirement: Leverandøren skal beskrive hvilke skjemakomponenter som kan brukes felles og hvilke som kan være unike
+    for en eller flere kommuner i samme flerkommuneskjema.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0016
+  source: Bilag 1 / tabell 6 / rad 7
+  type: V
+  text: For å komme raskt opp med ny løsning samt spare tid er det behov for at leverandør har et etablert bibliotek for flerkommuneskjema.
+    Det er også ønskelig å vite om en-kommune skjema enkelt kan lages om til et fler-kommune skjema.
+  response_requirement: 'Leverandøren skal beskrive: om det finnes et bibliotek med ferdige flerkommuneskjema som kan gjenbrukes
+    hvordan en-kommune skjema kan konverteres til flerkommuneskjema eventuelle begrensninger i funksjonalitet'
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0017
+  source: Bilag 1 / tabell 7 / rad 1
+  type: AV
+  text: Beskriv hvordan løsningen lar seg implementere i kommunens nettside.
+  response_requirement: Beskriv hvordan løsningen kan implementeres på kommunens nettside, inkludert eventuelle forutsetninger
+    og begrensninger.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0018
+  source: Bilag 1 / tabell 7 / rad 2
+  type: V
+  text: Beskriv hvordan løsningen lar seg implementere i kommunens MinSide-løsningen.
+  response_requirement: Beskriv hvordan løsningen kan implementeres i kommunens MinSide, inkl. forutsetninger og begrensninger.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0019
+  source: Bilag 1 / tabell 7 / rad 3
+  type: V
+  text: Autentisering DUF/virksomhet Løsningen bør ha funksjonalitet for å støtte autentisering av personer med D eller DUF
+    nummer eller folk som befinner seg i utlandet.
+  response_requirement: Beskriv hvordan autentisering med D-nummer/DUF og personer i utlandet støttes, samt eventuelle begrensninger.
+  acceptance_criteria: []
+  tags:
+  - auth
+  - id-porten
+  - identity
+- id: REQ-B1-0020
+  source: Bilag 1 / tabell 7 / rad 4
+  type: V
+  text: Fullmakt til å fylle ut søknad Sluttbruker bør kunne gi annen person fullmakt til utfylling av søknad. Dersom løsningen
+    tilbyr fullmakt. Fullmakten må kunne knyttes til et skjema. Løsningen må kunne dokumentere både fullmakter som er gitt
+    og hvem som er utfyller av et skjema.
+  response_requirement: Beskriv hvordan fullmakter håndteres per skjema, inkludert dokumentasjon av hvem som fyller ut og
+    støtte for digital lommebok.
+  acceptance_criteria: []
+  tags:
+  - archive
+  - integration
+- id: REQ-B1-0021
+  source: Bilag 1 / tabell 7 / rad 5
+  type: AV
+  text: Løsningen skal støtte elektronisk signering via Digdirs nasjonale signeringstjeneste (eSignering), inkludert signering
+    med BankID, Buypass og Commfides, i tråd med gjeldende nasjonale standarder og eIDAS-krav.
+  response_requirement: Beskriv støtte for eSignering via Digdir (BankID, Buypass, Commfides), sikkerhetsnivå og multisignering.
+  acceptance_criteria: []
+  tags:
+  - security
+- id: REQ-B1-0022
+  source: Bilag 1 / tabell 7 / rad 6
+  type: V
+  text: Det er behov for at løsningen/skjema i fremtiden skal kunne integreres med Altinns tilgangsstyring ved å støtte bruk
+    av tilgangspakker og autorisasjon.
+  response_requirement: Beskriv hvordan løsningen kan integreres med Altinns tilgangspakker og autorisasjon, inkl. eventuelle
+    begrensninger og fremdrift mot kommende funksjonalitet.
+  acceptance_criteria: []
+  tags:
+  - observability
+  - ops
+  - security
+  - sla
+- id: REQ-B1-0023
+  source: Bilag 1 / tabell 7 / rad 7
+  type: V
+  text: 'Sluttbruker har behov for ulike funksjonaliteter i skjemaløsningen. Dette gjelder blant annet, muligheten for: å
+    få oversikt over påstartede (mellomlagrede) og fullførte skjemaer. Skjemaløsningen skal ha innebygget lagring av utkast
+    (draft-funksjon). Systemet skal automatisk lagre utfylte data slik at sluttbruker kan fortsette der de slapp. Sluttbruker
+    skal kunne hente opp skjemaet på nytt via samme lenke, uavhengig av om skjema er fullført eller ikke. Lagringsfunksjonen
+    skal ikke være avhengig av lokal nettleser-session eller cookies alene. at sluttbruker selv skal kunne styre når de ønsker
+    å slette et påbegynt eller ferdig utfylt skjema. Sluttbruker må kunne ta vare på sine påbegynte/innsendte skjemaer utover
+    kommunens sletteregler. Det legges vekt på at sluttbruker skal ha god visuell oversikt over sine påbegynte eller ferdige
+    skjemaer igjennom eksempelvis en «Min side» funksjonalitet.'
+  response_requirement: 'Beskriv hvordan løsningen: lagrer utkast automatisk lar sluttbruker hente opp skjema via samme lenke
+    gir visuell oversikt over påbegynte/fullførte skjemaer lar sluttbruker selv slette skjemaer'
+  acceptance_criteria: []
+  tags:
+  - gdpr
+  - observability
+  - ops
+  - privacy
+  - sla
+- id: REQ-B1-0024
+  source: Bilag 1 / tabell 7 / rad 8
+  type: V
+  text: Kunde skal kunne konfigurere regler for sletting av skjema. Eksempelvis sette maks levetid på; påbegynt skjema, innsendte
+    skjema, utskriftsskjema, brukeropplastede vedlegg og tilsvarende.
+  response_requirement: Beskriv hvordan kunden kan konfigurere regler for sletting (påbegynt, innsendt, vedlegg, utskrifter).
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0025
+  source: Bilag 1 / tabell 7 / rad 9
+  type: AV
+  text: Sluttbruker skal kunne hente opp et tidligere innlevert skjema og lage en kopi av dette, kunne redigere det kopierte
+    skjemaet og sende det inn på nytt. Eksempel er søknad om lukket/åpent skjenking der sluttbruker henter frem gammel søknad,
+    endrer dato for (flere) arrangementer samtidig, legger inn eventuelt nye datoer, og så levere skjema på nytt.
+  response_requirement: Beskriv hvordan sluttbruker kan hente opp et tidligere skjema, kopiere og sende inn på nytt. Det legges
+    vekt på at sluttbruker skal ha god visuell oversikt over sine ferdige skjemaer igjennom eksempelvis en «Min side» funksjonalitet
+    der man kan kopiere tidligere innsendt skjema.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0026
+  source: Bilag 1 / tabell 7 / rad 10
+  type: V
+  text: Sluttbrukeren skal kunne redigere opplysninger som automatisk fylles inn i skjemaet basert på data hentet ved innlogging/autentisering.
+  response_requirement: Beskriv hvordan sluttbruker kan redigere felt som automatisk fylles ved innlogging/autentisering.
+  acceptance_criteria: []
+  tags:
+  - audit
+  - auth
+  - id-porten
+  - identity
+  - logging
+  - security
+- id: REQ-B1-0027
+  source: Bilag 1 / tabell 7 / rad 11
+  type: AV
+  text: Sluttbruker har behov for å motta oppsummering på utfylt skjema og bekreftelse på at skjema er sendt inn.
+  response_requirement: Beskriv hvordan sluttbruker mottar bekreftelse på utfylt skjema, inkl. eventuelle begrensninger.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0028
+  source: Bilag 1 / tabell 7 / rad 12
+  type: AV
+  text: Sluttbruker kan for enkelte skjema ha behov for å laste opp vedlegg i ulike formater (f.eks. Word, PDF, bilder).
+  response_requirement: Beskriv hvordan sluttbruker kan laste opp vedlegg i ulike formater, inkl. eventuelle begrensninger.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0029
+  source: Bilag 1 / tabell 7 / rad 13
+  type: V
+  text: Sluttbruker skal kunne legge inn en evaluering av sin erfaring med det aktuelle skjemaet. Kunde har behov for at denne
+    evalueringen på en enkel måte samles i en felles evaluering for dette skjemaet eller for en gruppe av skjemaer og over
+    tid.
+  response_requirement: Beskriv hvordan sluttbruker kan gi evaluering av skjema, og hvordan evalueringer samles for skjema
+    eller grupper av skjemaer.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0030
+  source: Bilag 1 / tabell 7 / rad 14
+  type: V
+  text: Enkelte sluttbrukere kan ha behov for alternativer for digitale skjema med autentisering gjennom ID-porten - for eksempel
+    om det er mulig å laste ned en PDF av det digitale skjema for manuell utfylling.
+  response_requirement: Beskriv hvordan løsningen støtter alternative formater, f.eks. PDF for manuell utfylling, og eventuelle
+    begrensninger.
+  acceptance_criteria: []
+  tags:
+  - auth
+  - id-porten
+  - identity
+- id: REQ-B1-0031
+  source: Bilag 1 / tabell 7 / rad 15
+  type: V
+  text: Det vil være behov for å kunne eksportere og importere skjemaer til og fra leverandørs løsning og andre løsninger.
+  response_requirement: Beskriv hvordan skjemaer kan eksporteres/importeres, inkl. filformater.
+  acceptance_criteria: []
+  tags:
+  - archive
+  - integration
+- id: REQ-B1-0032
+  source: Bilag 1 / tabell 7 / rad 16
+  type: AV
+  text: Kunde har behov for å bruke ulike felttyper i et skjema samt muligheter for å gjøre felter i skjemaer obligatoriske/valgfrie
+    og å legge til forklarende tekst/informasjon til felter.
+  response_requirement: Beskriv tilgjengelige felttyper, obligatoriske/valgfrie felter og mulighet for forklarende tekst.
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - uu
+- id: REQ-B1-0033
+  source: Bilag 1 / tabell 7 / rad 17
+  type: AV
+  text: Det må være datavalidering av feltverdier for å sikre god datakvalitet. (f.eks. Fødselsnummer, telefonnummer, e-post,
+    etc.).
+  response_requirement: Beskriv hvordan datavalidering håndteres for felt som fødselsnummer, e-post, telefon, etc., inkl.
+    begrensninger.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0034
+  source: Bilag 1 / tabell 7 / rad 18
+  type: AV
+  text: Kunde har behov for å angi visnings- eller aktiveringsbetingelser på felter og verdier. Hvilke valgmuligheter en sluttbruker
+    presenteres for er avhengig av hvilke valg sluttbrukeren har gjort tidligere.
+  response_requirement: Beskriv hvordan felt kan vises/skjules basert på tidligere valg i skjema.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0035
+  source: Bilag 1 / tabell 7 / rad 19
+  type: V
+  text: Kunde har behov for å kunne opprette, redigere og slette en skjemamal samt kunne opprette en ny mal basert på et eksisterende
+    skjemamal.
+  response_requirement: Beskriv hvordan kunden kan opprette, redigere, slette og basere nye maler på eksisterende maler.
+  acceptance_criteria: []
+  tags:
+  - gdpr
+  - privacy
+- id: REQ-B1-0036
+  source: Bilag 1 / tabell 7 / rad 20
+  type: AV
+  text: Kunde skal kunne lage et stort antall unike skjema i løsningen med et fritt antall innsendinger.
+  response_requirement: Beskriv hvordan løsningen håndterer et stort antall unike skjema og ubegrenset innsendinger, inkl.
+    begrensninger.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0037
+  source: Bilag 1 / tabell 7 / rad 21
+  type: AV
+  text: Kunde har behov for å kunne forhåndsvise skjemaer ved opprettelse og kunne gjøre endring i skjema før skjema legges
+    ut til sluttbruker.
+  response_requirement: Beskriv hvordan skjema kan forhåndsvises og endres før publisering.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0038
+  source: Bilag 1 / tabell 7 / rad 22
+  type: V
+  text: Kunde har behov for muligheten til å gruppere, kategorisere og meta-tagge skjemaer og søke i tilgjengelige skjemaer
+    i skjemaløsningen.
+  response_requirement: Beskriv hvordan skjema kan grupperes, kategoriseres og søkes i løsningen.
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - uu
+- id: REQ-B1-0039
+  source: Bilag 1 / tabell 7 / rad 23
+  type: V
+  text: Kunde har behov for å opprette og administrere lister over skjemamottakere (sluttbrukere eller interne ansatte), slik
+    at skjemaer kan distribueres til en forhåndsdefinert gruppe sluttbrukere.
+  response_requirement: Beskriv hvordan lister med sluttbrukere kan opprettes og administreres, inkl. behandling av personopplysninger
+    og begrensninger i antall/format.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0040
+  source: Bilag 1 / tabell 7 / rad 24
+  type: V
+  text: Kunde har behov for at løsningen gir mulighet for å endre standard utseende og form på skjema-layout, i da en typisk
+    HTML-editor.
+  response_requirement: Beskriv hvordan standard utseende og form på skjema kan endres, f.eks. i HTML-editor.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0041
+  source: Bilag 1 / tabell 7 / rad 25
+  type: V
+  text: Kunde har behov for at løsningen gir mulighet for å lage egne avanserte skript / koding for f.eks. beregne/kalkulere
+    felt, sporvalg og annen logikk.
+  response_requirement: Beskriv hvordan egne skript/kode kan brukes for beregninger, logikk og feltvalg.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0042
+  source: Bilag 1 / tabell 7 / rad 26
+  type: V
+  text: Kunde har behov for avlevering av skjemadata fra et innsendt skjema til filområde(r) der filtyper av typen CSV/XLSX
+    format bør være støttet.
+  response_requirement: Beskriv hvordan skjema kan avleveres til filområder, inkl. støttede filtyper.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0043
+  source: Bilag 1 / tabell 7 / rad 27
+  type: AV
+  text: Kunde har behov for å kunne avlevere skjema til filområder.
+  response_requirement: Beskriv hvordan skjema kan avleveres, inkl. onprem og sky.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0044
+  source: Bilag 1 / tabell 7 / rad 28
+  type: V
+  text: 'Kunde har behov for å kunne lage egne datakilder, som interne lister- /tabeller inne i skjemaløsningen. Dette for
+    å enklere kunne benytte og administrere større listeutvalg til menyvalg og andre funksjoner i skjemabygging. Eksempler
+    #1: skjema for bestilling av mat i kantinen, der det er behov for å ha en tabell med kolonner «koststed» og «enhetsnavn»
+    og «enhetsleder». Dette skal kunne gjøres manuelt og automatisk. #2: kan være i samme skjema som ovenfor, men med egen
+    tabell som inneholder en prisliste. Typisk kolonner “Varenummer”, “Varenavn”, “Pris”, “Mva kode” osv. Og basert på denne
+    kan man gjøre beregninger på total pris, mengde osv i selve skjema før innsending.'
+  response_requirement: Beskriv hvordan interne lister/tabeller kan opprettes og brukes i skjema, manuelt eller automatisk
+    via Entra ID.
+  acceptance_criteria: []
+  tags:
+  - billing
+- id: REQ-B1-0045
+  source: Bilag 1 / tabell 7 / rad 29
+  type: V
+  text: Kunde har behov for å kunne lage egendefinerte elementer i skjemaløsningen. Dette betyr å gruppere / sette samme ett
+    sett med eksisterende felter, slik at man kan gjenbruke disse i nye skjemaer med til dels samme innhold. Dette kan være
+    tidsbesparende ved utvikling av nye skjemaer.
+  response_requirement: Beskriv hvordan grupper av felter kan lagres og gjenbrukes i nye skjema.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0046
+  source: Bilag 1 / tabell 7 / rad 30
+  type: V
+  text: Kunde har behov for å kunne kategorisere publiserte skjemaer samlet på kommunens interne og eksterne skjemaoversikt-nettside
+    under forskjellige områder/temaer (som for eksempel «Helse og omsorg», «Næring, skatt og betaling» m.m.)
+  response_requirement: Beskriv hvordan publiserte skjema kan kategoriseres og vises under tema/område på intern/ekstern oversikt
+  acceptance_criteria: []
+  tags:
+  - billing
+- id: REQ-B1-0047
+  source: Bilag 1 / tabell 8 / rad 1
+  type: AV
+  text: Kunde har behov for en løsning som også dekker behovet for interne skjemaer.
+  response_requirement: Bekreft at løsningen støtter interne skjemaer. Beskriv eventuelle større begrensninger sammenlignet
+    med ekstern skjemaløsning (f.eks. funksjonalitet, antall brukere og integrasjoner).
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0048
+  source: Bilag 1 / tabell 8 / rad 2
+  type: V
+  text: Kunde har behov for at ansatte kan bruke et internt skjema fra alle enheter, enten de er på jobb eller på hjemmekontor
+    med privat nettverk.
+  response_requirement: Beskriv eventuelle forutsetninger, begrensninger eller nødvendige sikkerhetstiltak (VPN, autentisering,
+    nettverkspolicyer.
+  acceptance_criteria: []
+  tags:
+  - auth
+  - id-porten
+  - identity
+  - security
+- id: REQ-B1-0049
+  source: Bilag 1 / tabell 9 / rad 1
+  type: V
+  text: 'Skjemaløsningen bør støtte enkel integrasjon med karttjenester for visning av kart og relevant lokasjonsinformasjon.
+    Det er tilstrekkelig at løsningen kan vise et kartutsnitt som administrator kan konfigurere, for eksempel via en standard
+    embed-funksjon eller eksisterende kartmodul. Det er ønskelig at løsningen støtter: søk på adresse eller eiendom markering
+    av et punkt eller område i kartet Avansert tegning (linje, polygon) og støtte for WMS/WFS er ikke nødvendig ved tilbudstidspunkt,
+    men kan beskrives som mulig fremtidig funksjonalitet dersom leverandøren tilbyr dette.'
+  response_requirement: 'Beskriv hvordan løsningen støtter visning av kart og lokasjonsinformasjon, inkludert hvordan administrator
+    kan konfigurere kartutsnitt. Beskriv om løsningen støtter: Søk på adresse eller eiendom Markering av punkt eller område
+    på kartet Beskriv eventuelle begrensninger ved tilbudstidspunktet. Eventuelt: Beskriv mulig fremtidig funksjonalitet,
+    f.eks. linje/polygon-tegning eller WMS/WFS, dersom dette er aktuelt.'
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0050
+  source: Bilag 1 / tabell 10 / rad 1
+  type: AV
+  text: Løsningen skal kunne vise oversikt over bruken av hvert skjema, inkludert antall innsendelser og eventuelt antall
+    åpninger.
+  response_requirement: 'Beskriv hvordan løsningen viser statistikk per skjema, inkludert: Antall innsendelser Antall åpninger
+    (hvis tilgjengelig) Beskriv hvilke sorterings- og filtreringsmuligheter som finnes (f.eks. skjema-ID, gruppe, dato).'
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - uu
+- id: REQ-B1-0051
+  source: Bilag 1 / tabell 10 / rad 2
+  type: V
+  text: Løsningen skal gjøre det mulig å eksportere statistikk til vanlige formater som Excel eller CSV. Det er ønskelig at
+    løsningen tilbyr enkel visning eller presentasjon av statistikk direkte i løsningen.
+  response_requirement: Beskriv hvordan statistikk kan eksporteres til vanlige formater som Excel eller CSV. Beskriv om og
+    hvordan statistikk kan visualiseres direkte i løsningen (diagram, grafer, tabeller)
+  acceptance_criteria: []
+  tags:
+  - archive
+  - integration
+- id: REQ-B1-0052
+  source: Bilag 1 / tabell 10 / rad 3
+  type: V
+  text: Statistikk og rapportering skal være tilgjengelig i samme administrasjonsmiljø som resten av skjemaløsningen.
+  response_requirement: Beskriv hvordan statistikk og rapporter nås i administrasjonsmiljøet. Forklar om brukere med ulike
+    roller får ulike visningsrettigheter.
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - security
+  - uu
+- id: REQ-B1-0053
+  source: Bilag 1 / tabell 10 / rad 4
+  type: V
+  text: Dersom løsningen tilbyr API for tilgang til statistikkdata, skal leverandøren beskrive dette.
+  response_requirement: Beskriv eventuelle API-er som kan brukes for å hente ut statistikkdata
+  acceptance_criteria: []
+  tags:
+  - security
+- id: REQ-B1-0054
+  source: Bilag 1 / tabell 13 / rad 1
+  type: AV
+  text: Leverandør må ha et etablert styringssystem for informasjonssikkerhet i henhold til en anerkjent standard.
+  response_requirement: Leverandøren bes beskrive sitt styringssystem for informasjonssikkerhet
+  acceptance_criteria: []
+  tags:
+  - security
+- id: REQ-B1-0055
+  source: Bilag 1 / tabell 13 / rad 2
+  type: AV
+  text: Leverandøren skal ha tydelig definerte sikkerhetsmål og strategier. Videre skal leverandøren ha sikkerhetsdokumentasjon
+    for bruk i egen virksomhet, herunder instrukser, sjekklister og beredskapsplaner for å understøtte arbeidet med sikkerhet
+    i virksomheten og mot kunder.
+  response_requirement: Leverandøren bes om en overordnet beskrivelse av sine sikkerhetsmål og strategier samt dokumentasjon.
+  acceptance_criteria: []
+  tags:
+  - archive
+  - integration
+  - security
+- id: REQ-B1-0056
+  source: Bilag 1 / tabell 13 / rad 3
+  type: AV
+  text: Leverandøren skal regelmessig gjennomføre en metodisk risikovurdering for å evaluere risiko, samt beslutte sikringskrav
+    og -tiltak. Risikovurderingen skal som minimum utføres årlig, og resultatet av denne, samt tilhørende tiltak for risikohåndtering
+    skal på forespørsel gjøres tilgjengelig for kunden.
+  response_requirement: Leverandøren bes beskrive hvordan de gjennomfører risikovurderinger og implementerer risikoreduserende
+    tiltak for løsningene de leverer.
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - uu
+- id: REQ-B1-0057
+  source: Bilag 1 / tabell 13 / rad 4
+  type: V
+  text: Det er ønskelig at leverandøren innehar gyldige sertifiseringer og/eller kan vise til tredjepartsattestasjoner som
+    er relevante for utvikling, drift og forvaltning av løsningen, med hensyn til informasjonssikkerhet. Eksempler kan være
+    ISO 9001, 27001-sertifisering, sertifisering av datasentre, ISAE 3402-rapporter, CSA STAR-sertifisering, osv.
+  response_requirement: Leverandøren bes beskrive relevante sertifiseringer og/eller tilgjengelige attestasjonsprodukter for
+    seg selv og eventuelle underleverandører.
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - observability
+  - ops
+  - security
+  - sla
+  - uu
+- id: REQ-B1-0058
+  source: Bilag 1 / tabell 13 / rad 5
+  type: V
+  text: Dersom leverandøren innehar gyldige sertifiseringer, skal de fremlegge ekstern revisjonsrapport vedrørende oppfyllelse
+    av krav til de aktuelle sertifikatene. Dokumentasjon av gjennomførte revisjoner skal ikke være eldre enn to år.
+  response_requirement: Leverandøren bes fremlegge relevant dokumentasjon for seg selv og eventuelle underleverandører.
+  acceptance_criteria: []
+  tags:
+  - archive
+  - audit
+  - integration
+  - logging
+- id: REQ-B1-0059
+  source: Bilag 1 / tabell 13 / rad 6
+  type: AV
+  text: Leverandøren skal jevnlig gjennomføre interne revisjoner, herunder testing av tekniske, organisatoriske og fysiske
+    sikkerhetstiltak.
+  response_requirement: Leverandøren bes beskrive hvordan de planlegger, gjennomfører og dokumenterer revisjoner og testing.
+  acceptance_criteria: []
+  tags:
+  - audit
+  - logging
+  - security
+- id: REQ-B1-0060
+  source: Bilag 1 / tabell 13 / rad 7
+  type: AV
+  text: Leverandøren skal sørge for at eventuelle underleverandører følger sikkerhetsrelaterte retningslinjer og krav.
+  response_requirement: Leverandøren bes beskrive hvordan de følger opp sikkerhetsarbeidet hos sine underleverandører.
+  acceptance_criteria: []
+  tags:
+  - security
+- id: REQ-B1-0061
+  source: Bilag 1 / tabell 14 / rad 1
+  type: AV
+  text: 'Løsningen skal legge til rette for autentisering basert på tjenstlig behov, for eksempel med løsninger som: - Federert
+    pålogging i form av SAML2.0 eller OpenID Connect mot kundens identitets provider (ADFS eller Entra ID).'
+  response_requirement: Beskriv hvordan løsningen støtter autentisering basert på tjenstlig behov Oppgi hvilke løsninger som
+    tilbys (f.eks. SAML2.0, OpenID Connect) og hvordan de integreres med kundens identitets provider (ADFS eller Entra ID)
+  acceptance_criteria: []
+  tags:
+  - audit
+  - auth
+  - id-porten
+  - identity
+  - logging
+  - security
+- id: REQ-B1-0062
+  source: Bilag 1 / tabell 14 / rad 2
+  type: AV
+  text: 'All tildeling av autorisasjon skal registreres i et autorisasjonsregister. Registeret bør inneholde: informasjon
+    om hvem som er tildelt autorisasjon formålet med autorisasjonen tidspunkt for når autorisasjonen ble gitt og eventuelt
+    tilbakekalt tidsbegrensninger på autorisasjoner, ansettelses- eller avtaleforhold informasjon om hvilken virksomhet den
+    autoriserte er knyttet til roller og rettigheter som har blitt tildelt brukerne alle innlegginger, endringer og sletting
+    av tilganger basert på autorisasjoner'
+  response_requirement: 'Beskriv hvordan løsningen støtter et autorisasjonsregister, inkludert: Hvem som er tildelt autorisasjon
+    Formål med autorisasjonen Tidspunkt for tildeling og tilbakekalling Tidsbegrensninger basert på ansettelse/avtale Virksomhet
+    knyttet til autorisert bruker Roller og rettigheter Historikk for innlegginger, endringer og slettinger Oppgi eventuelle
+    begrensninger i registeret.'
+  acceptance_criteria: []
+  tags:
+  - security
+- id: REQ-B1-0063
+  source: Bilag 1 / tabell 14 / rad 3
+  type: AV
+  text: Autorisasjonsregisteret skal være beskyttet mot uautoriserte endringer, og skal kunne benyttes til å hente ut informasjon
+    om autorisasjoner i en periode etter at en autorisasjon er trukket tilbake.
+  response_requirement: Beskriv hvordan registeret beskyttes mot uautoriserte endringer. Beskriv hvor lenge informasjon om
+    autorisasjoner kan hentes ut etter tilbakekall. Oppgi eventuelle tekniske eller organisatoriske begrensninger.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0064
+  source: Bilag 1 / tabell 14 / rad 4
+  type: AV
+  text: Leverandøren skal hindre uautorisert bruk og ivareta integritet og konfidensialitet ifm. fjernaksess. Kravet gjelder
+    i sammenheng med drift/administrasjon.
+  response_requirement: Beskriv leverandørens rutiner og tekniske tiltak for å hindre uautorisert bruk ved fjernaksess. Beskriv
+    hvordan integritet og konfidensialitet ivaretas under drift og administrasjon.
+  acceptance_criteria: []
+  tags:
+  - observability
+  - ops
+  - sla
+- id: REQ-B1-0065
+  source: Bilag 1 / tabell 14 / rad 5
+  type: V
+  text: Leverandøren skal sikre at det er fysiske sikringstiltak hvor Kundens data er tilgjengelig. Henvisning til eventuell
+    datasentersertifisering er tillatt.
+  response_requirement: Beskriv overordnet hvilke fysiske sikringstiltak som gjelder for data der kunden har tilgang. Oppgi
+    eventuell datasentersertifisering eller tredjepartsattestasjoner.
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - security
+  - uu
+- id: REQ-B1-0066
+  source: Bilag 1 / tabell 14 / rad 6
+  type: AV
+  text: Leverandøren skal separere data som tilhører forskjellige kunder. Leverandørens egne data skal separeres fra kundenes
+    data.
+  response_requirement: 'Beskriv sikkerhetsarkitektur som sikrer separasjon mellom: Data fra forskjellige kunder Leverandørens
+    egne data og kundenes data Oppgi tekniske og organisatoriske tiltak for å sikre separasjon.'
+  acceptance_criteria: []
+  tags:
+  - security
+- id: REQ-B1-0067
+  source: Bilag 1 / tabell 15 / rad 1
+  type: AV
+  text: For å oppdage brudd eller forsøk på å bryte regelverket skal det som minimum føres logg over uautorisert bruk i informasjonssystemer,
+    nettverksoperativsystemer og alle sikkerhetsbarrierer.
+  response_requirement: Beskriv hvordan løsningen fører logg over uautorisert bruk, inkludert informasjonssystemer, nettverksoperativsystemer
+    og sikkerhetsbarrierer. Oppgi hvilke typer hendelser som logges, og hvordan loggene lagres og tilgjengeliggjøres for overvåkning.
+    Beskriv eventuelle begrensninger eller forutsetninger.
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - audit
+  - logging
+  - observability
+  - ops
+  - security
+  - sla
+  - uu
+- id: REQ-B1-0068
+  source: Bilag 1 / tabell 15 / rad 2
+  type: V
+  text: Behov for å se logg over autorisert bruk av informasjonssystemene.
+  response_requirement: Beskriv hvordan løsningen fører logg over autorisert bruk av systemene. Oppgi hvilke data som registreres,
+    og hvordan loggen kan brukes til rapportering eller revisjon. Beskriv eventuelle begrensninger i loggføringen.
+  acceptance_criteria: []
+  tags:
+  - audit
+  - logging
+  - security
+- id: REQ-B1-0069
+  source: Bilag 1 / tabell 15 / rad 3
+  type: V
+  text: Logger (data og informasjon) i hendelses-registrene skal kunne analyseres ved hjelp av analyseverktøy med henblikk
+    på å oppdage brudd. Videre skal loggene fra hendelsesregistre kunne eksporteres eller gjøres tilgjengelig for eksterne
+    analyseverktøy.
+  response_requirement: Beskriv hvordan loggdata kan eksporteres eller integreres med eksterne analyseverktøy. Oppgi eventuelle
+    begrensninger på analyse, formater eller frekvens for eksport.
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - archive
+  - audit
+  - integration
+  - logging
+  - security
+  - uu
+- id: REQ-B1-0070
+  source: Bilag 1 / tabell 15 / rad 4
+  type: AV
+  text: Loggene i hendelsesregistrene skal sikres mot uautorisert endring og sletting.
+  response_requirement: Beskriv tiltak som sikrer hendelseslogger mot uautorisert endring eller sletting. Oppgi tekniske og
+    organisatoriske mekanismer som beskytter integriteten til loggene. Beskriv eventuelle begrensninger eller forutsetninger.
+  acceptance_criteria: []
+  tags:
+  - audit
+  - logging
+  - observability
+  - ops
+  - security
+  - sla
+- id: REQ-B1-0071
+  source: Bilag 1 / tabell 16 / rad 1
+  type: AV
+  text: Leverandøren skal ha mekanismer for sikring av data under transport, prosessering og lagring for å ivareta integritet
+    og konfidensialitet.
+  response_requirement: Leverandøren bes beskrive hvordan de sikrer data under transport, prosessering og lagring.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0072
+  source: Bilag 1 / tabell 16 / rad 2
+  type: AV
+  text: Kryptering forutsetter en forsvarlig behandling av partenes krypteringsnøkkel(er).
+  response_requirement: Beskriv hvordan krypteringsnøkler administreres, oppbevares og beskyttes (f.eks. passord, sertifikater).
+    Beskriv prosedyrer for nøkkelrotasjon, sikker sletting og gjenoppretting.
+  acceptance_criteria: []
+  tags:
+  - auth
+  - id-porten
+  - identity
+  - security
+- id: REQ-B1-0073
+  source: Bilag 1 / tabell 17 / rad 1
+  type: AV
+  text: Det er en forutsetning at leverandøren har oversikt over og kontroll på alt eget utstyr og programvare som benyttes
+    i behandlingen av kundens data slik at konfidensialitet, integritet og tilgjengelighet blir ivaretatt.
+  response_requirement: Beskriv hvordan leverandøren holder oversikt over alt utstyr og programvare som benyttes i behandlingen
+    av kundedata. Oppgi eventuelle verktøy og rutiner for å sikre konfidensialitet, integritet og tilgjengelighet.
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - uu
+- id: REQ-B1-0074
+  source: Bilag 1 / tabell 17 / rad 2
+  type: AV
+  text: 'Konfigurasjonsendringer, dvs. endringer i utstyr og/eller programvare, skal ikke settes i drift før risikoreduserende
+    tiltak er gjennomført. Eksempler kan være: Prosess for godkjenning og gjennomføring av endringer Risikovurdering som viser
+    at nivå for akseptabel risiko er oppnådd Test som sikrer at forventede funksjoner er ivaretatt Implementering som sikrer
+    mot uforutsette hendelser Ny konfigurasjon er dokumentert Konfigurasjonsendringer er godkjent/varslet av/til kunden'
+  response_requirement: Beskriv prosess for godkjenning, risikovurdering, testing, implementering og dokumentasjon av konfigurasjonsendringer.
+    Oppgi hvordan kunden varsles og involveres ved endringer.
+  acceptance_criteria: []
+  tags:
+  - archive
+  - integration
+  - observability
+  - ops
+  - sla
+- id: REQ-B1-0075
+  source: Bilag 1 / tabell 17 / rad 3
+  type: AV
+  text: Leverandøren skal dokumentere arkitektur og teknisk oppbygning av løsningen på et nivå som gjør det mulig for Kunden
+    å forstå hvordan konfidensialitet, integritet og tilgjengelighet ivaretas. Leverandøren skal på forespørsel kunne gjøre
+    rede for hvor kundens data behandles (datasentre, lokasjoner og underleverandører).
+  response_requirement: Beskriv hvordan leverandøren dokumenterer teknisk arkitektur, datasentermiljøer og underleverandører.
+    Beskriv hvordan konfidensialitet, integritet og tilgjengelighet ivaretas.
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - uu
+- id: REQ-B1-0076
+  source: Bilag 1 / tabell 18 / rad 1
+  type: AV
+  text: Det skal jevnlig tas sikkerhetskopi av data og informasjon som er nødvendig for gjenoppretting av normal bruk.
+  response_requirement: Beskriv rutiner for sikkerhetskopiering, frekvens og ansvar.
+  acceptance_criteria: []
+  tags:
+  - security
+- id: REQ-B1-0077
+  source: Bilag 1 / tabell 18 / rad 2
+  type: AV
+  text: Sikkerhetskopier skal oppbevares på en måte som sikrer dem mot uautorisert tilgang, fysisk skade og logisk korrupsjon,
+    og skal være adskilt fra driftsmiljøet. For skytjenester skal leverandøren beskrive hvordan dette ivaretas, eksempelvis
+    gjennom geo-redundant lagring eller tilsvarende mekanismer
+  response_requirement: Beskriv hvordan sikkerhetskopier sikres mot uautorisert tilgang, fysisk skade og logisk korrupsjon,
+    og hvordan de er adskilt fra driftsmiljøet. Oppgi mekanismer som geo-redundans.
+  acceptance_criteria: []
+  tags:
+  - observability
+  - ops
+  - security
+  - sla
+- id: REQ-B1-0078
+  source: Bilag 1 / tabell 18 / rad 3
+  type: AV
+  text: Det skal jevnlig foretas test av at sikkerhetskopiene er korrekte og kan tilbakeføres.
+  response_requirement: Beskriv prosess for testing av sikkerhetskopier og dokumentasjon av gjenoppretting.
+  acceptance_criteria: []
+  tags:
+  - archive
+  - integration
+  - security
+- id: REQ-B1-0079
+  source: Bilag 1 / tabell 19 / rad 1
+  type: AV
+  text: Løsningen skal være beskyttet mot sikkerhetstruende hendelser, inkludert digitale angrep som uautorisert tilgang,
+    malware, DDoS og sårbarhetsutnyttelse. Leverandøren skal beskrive på overordnet nivå hvilke organisatoriske og tekniske
+    tiltak som er implementert for å forebygge og oppdage slike hendelser.
+  response_requirement: Beskriv organisatoriske og tekniske tiltak mot uautorisert tilgang, malware, DDoS og sårbarhetsutnyttelse.
+  acceptance_criteria: []
+  tags:
+  - security
+- id: REQ-B1-0080
+  source: Bilag 1 / tabell 20 / rad 1
+  type: AV
+  text: Bruk av kundens produksjonsdata til testing er kun tillatt etter avtale. Dersom produksjonsdata benyttes til test,
+    skal disse sikres på samme måte som produksjonsdata, og slettes umiddelbart etter testens gjennomføring. Leverandøren
+    skal beskrive sine rutiner for bruk og sletting av testdata.
+  response_requirement: Hvis aktuelt, beskriv rutiner for bruk av produksjonsdata i test, inkludert sikkerhet og sletting
+    etter test.
+  acceptance_criteria: []
+  tags:
+  - gdpr
+  - privacy
+  - security
+- id: REQ-B1-0081
+  source: Bilag 1 / tabell 21 / rad 1
+  type: AV
+  text: Leverandøren skal vedlikeholde dokumentasjon og oversikt over alle informasjonssystemer som er kritiske for normal
+    drift av løsningen. Kritiske systemer inkluderer blant annet applikasjoner, infrastruktur, støtte- og overvåkingssystemer,
+    samt integrasjoner med eksterne tjenester som identitetsleverandører eller andre avhengigheter.
+  response_requirement: Leverandøren skal beskrive hvordan dokumentasjonen oppdateres og hvordan kritikalitet vurderes
+  acceptance_criteria: []
+  tags:
+  - archive
+  - integration
+  - observability
+  - ops
+  - sla
+- id: REQ-B1-0082
+  source: Bilag 1 / tabell 21 / rad 2
+  type: V
+  text: Leverandøren skal etablere nødprosedyrer for alternativ drift av løsningen ved kritiske hendelser, inkludert systemsvikt,
+    nettverksproblemer eller andre driftsavbrudd. Prosedyrer skal beskrive hvordan redundans og failover er ivaretatt, og
+    hvordan løsningen kan gjenopprettes for å opprettholde tilgjengelighet og integritet. Leverandøren skal også beskrive
+    hvordan nødprosedyrer testes, dokumenteres og vedlikeholdes.
+  response_requirement: Beskriv prosedyrer for alternativ drift, redundans, failover, testing og dokumentasjon.
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - archive
+  - integration
+  - observability
+  - ops
+  - sla
+  - uu
+- id: REQ-B1-0083
+  source: Bilag 1 / tabell 22 / rad 1
+  type: AV
+  text: Leverandøren skal sette kunden i stand til å etterleve personvernregelverket i avtaleperioden, også etter at avtaleforholdet
+    avsluttes.
+  response_requirement: Beskriv hvordan leverandøren sikrer at kunden kan etterleve personvernregelverk under og etter avtaleperioden.
+  acceptance_criteria: []
+  tags:
+  - gdpr
+  - privacy
+- id: REQ-B1-0084
+  source: Bilag 1 / tabell 22 / rad 2
+  type: AV
+  text: Løsningen skal tilrettelegges for å ivareta personvernprinsippene, særlig prinsippene om åpenhet, dataminimering,
+    lagringsbegrensning og riktighet.
+  response_requirement: Leverandøren bes beskrive hvordan personvernprinsippene tenkes ivaretatt i løsningen. Beskrivelsen
+    bør peke på tiltak, prosesser og rutiner som sikrer ivaretakelse av personvernprinsippene.
+  acceptance_criteria: []
+  tags:
+  - gdpr
+  - privacy
+- id: REQ-B1-0085
+  source: Bilag 1 / tabell 22 / rad 3
+  type: AV
+  text: Løsningen skal ha innebygd personvern og personvern som standardinnstilling.
+  response_requirement: Beskriv tiltak som sikrer innebygd personvern og standardinnstilling.
+  acceptance_criteria: []
+  tags:
+  - gdpr
+  - privacy
+- id: REQ-B1-0086
+  source: Bilag 1 / tabell 22 / rad 4
+  type: AV
+  text: Løsningen skal ivareta den registrertes rettigheter, inkludert interne og eksterne.
+  response_requirement: 'Leverandøren bes beskrive hvordan den registrertes rettigheter ivaretas, med hensyn til: Innsyn i
+    egne opplysninger Informasjon om egen søkehistorikk og logger Retting og sletting Begrensning av behandling Dataportabilitet'
+  acceptance_criteria: []
+  tags:
+  - audit
+  - logging
+  - security
+- id: REQ-B1-0087
+  source: Bilag 1 / tabell 22 / rad 5
+  type: V
+  text: Personvernerklæring Før søknad fylles ut må Skjemaløsningen gi mulighet til å akseptere den enkeltes kommunes personvernerklæring
+  response_requirement: Beskriv hvordan sluttbrukere kan akseptere personvernerklæring, og eventuelle begrensninger i en-kommune
+    vs. fler-kommune scenario.
+  acceptance_criteria: []
+  tags:
+  - gdpr
+  - privacy
+- id: REQ-B1-0088
+  source: Bilag 1 / tabell 23 / rad 1
+  type: AV
+  text: 'Integrasjon med nasjonale registre og felleskomponenter: Løsningen skal integreres med relevante nasjonale registre
+    og felleskomponenter, inkludert: Folkeregisteret (via KS FIKS) Kontakt- og reservasjonsregisteret Enhetsregisteret ID-porten
+    (OIDC) Altinn 3 / KS-digital eSignering Løsningen skal bruke disse integrasjonene for å: Forhåndsutfylle skjemaer. Validere
+    data regelstyrt og automatisk, der dette er relevant.'
+  response_requirement: 'Leverandøren skal beskrive: Hvilke nasjonale registre og felleskomponenter som støttes i standardløsningen.
+    Overordnet metode for integrasjon (API, modul, standardiserte protokoller). For komponenter under utvikling, planlagt
+    støtte og tidsplan. Hvordan preutfylling og validering gjennomføres fra de viktigste integrasjonene. Hvilke muligheter
+    kunden har for å konfigurere preutfylling og validering, med 1–2 illustrative eksempler på bruk i praksis.'
+  acceptance_criteria: []
+  tags:
+  - auth
+  - id-porten
+  - identity
+- id: REQ-B1-0089
+  source: Bilag 1 / tabell 23 / rad 2
+  type: AV
+  text: 'Integrasjon mot kommunale fagsystemer og sak/arkiv (Elements): Løsningen skal støtte overføring av metadata og vedlegg
+    til kommunens sak-/arkivsystem (Elements). Løsningen bør også kunne hente og vise arkiverings- eller behandlingsstatus
+    ("følg saken din") via Elements API.'
+  response_requirement: 'Leverandøren skal beskrive: Hvordan felter i skjema kobles til felter i Elements (overordnet metode).
+    Hvordan metadata, struktur og vedlegg håndteres. Hvordan arkiverings- eller behandlingsstatus kan hentes og presenteres
+    for sluttbruker.'
+  acceptance_criteria: []
+  tags:
+  - archive
+  - integration
+- id: REQ-B1-0090
+  source: Bilag 1 / tabell 23 / rad 3
+  type: AV
+  text: Integrasjon med fagsystemer og eksterne API-er. Løsningen skal kunne hente, validere og forhåndsutfylle data fra standardiserte
+    eksterne API-er, som eksempelvis økonomi-, HR-, byggesaks-, eiendoms-, barnehage- og skolesystemer. Løsningen skal håndtere
+    både interne og eksterne/nasjonale fagsystemer og løsninger.
+  response_requirement: 'Leverandøren skal beskrive (overordnet): generell metodikk for integrasjon mot eksterne API-er støttede
+    autentiseringsmekanismer (f.eks. Maskinporten, OAuth2) eventuelle ferdige integrasjoner eller erfaring fra kommunal sektor
+    hvordan løsningen håndterer manglende eller feil svar fra eksterne API-er i hvilken grad kunden selv kan konfigurere integrasjoner'
+  acceptance_criteria: []
+  tags:
+  - auth
+  - id-porten
+  - identity
+  - integration
+  - maskinporten
+- id: REQ-B1-0091
+  source: Bilag 1 / tabell 23 / rad 4
+  type: V
+  text: 'Skjemaløsningens egne API-er (grunnlags og motor-API). Løsningen skal tilby dokumenterte API-er som gjør det mulig
+    for andre systemer å integrere mot skjemaløsningens databehandlings- og prosesseringslag, ikke mot selve sluttbrukerskjemaet.
+    API-ene skal gjøre det mulig å: 1. Hente innsendinger (data, metadata, vedlegg) automatisk via API, uten manuell innlogging
+    eller nedlastning (programmatisk) 2. Sende inn data programmatisk (maskinell innsending) 3. Forhåndsutfylle komponenter
+    i skjema ved oppstart basert på eksterne data 4. Hente statusinformasjon knyttet til innsendinger eller prosesser. 5.
+    Automatisere arbeidsflyt og integrasjon med eksterne systemer via API.'
+  response_requirement: 'Leverandøren skal beskrive (overordnet): Hvilke API-er som tilbys og hvor de dokumenteres Hvilke
+    autentiseringsmekanismer som støttes Hvordan feil, unntak og nedetid håndteres. Eventuelt et kort eksempel på bruk av
+    API for integrasjon eller automatisering.'
+  acceptance_criteria: []
+  tags:
+  - audit
+  - auth
+  - id-porten
+  - identity
+  - logging
+  - observability
+  - ops
+  - security
+  - sla
+- id: REQ-B1-0092
+  source: Bilag 1 / tabell 23 / rad 5
+  type: V
+  text: 'Betalingsløsninger: Løsningen skal støtte betalingsfunksjonalitet for skjemaer som krever innbetaling fra sluttbruker,
+    på en sikker og brukervennlig måte. Integrasjon med Vipps skal dekke betaling med bankkort (VISA og Mastercard) samt Vipps-saldo.
+    Formål: Sikre at betaling kan gjennomføres direkte i skjemaet. Redusere behovet for manuell håndtering av betalinger.'
+  response_requirement: 'Leverandøren skal beskrive (overordnet): Hvilke betalingsløsninger som støttes som standard (f.eks.
+    Vipps, eventuelt andre metoder). Hvordan integrasjonen fungerer teknisk (API, modul eller tjenestetilkobling). Eventuelle
+    begrensninger, for eksempel transaksjonsvolum, valuta eller krav til sikkerhet / autentisering.'
+  acceptance_criteria: []
+  tags:
+  - auth
+  - billing
+  - id-porten
+  - identity
+  - security
+- id: REQ-B1-0093
+  source: Bilag 1 / tabell 23 / rad 6
+  type: V
+  text: Løsningen skal sikre at sensitive eller fortrolige skjemaopplysninger overføres trygt og korrekt til kommunenes infrastruktur,
+    i tråd med gjeldende lover og regelverk.
+  response_requirement: 'Leverandøren skal beskrive (overordnet): Hvordan innsendinger rutes sikkert til kommunens mottakskomponent.
+    Eventuelle tekniske begrensninger eller krav (filtyper, filstørrelse og autentisering) under overføring. Hvordan tilgangsstyring
+    og sikkerhet håndteres i overførings- og mottaksfasen. Hvordan logging og sporbarhet ivaretas under overføring til kommunen.
+    Om spesielle konfigurasjoner eller tilleggskomponenter kreves for å sikre korrekt og sikker overføring.'
+  acceptance_criteria: []
+  tags:
+  - audit
+  - auth
+  - id-porten
+  - identity
+  - logging
+  - security
+- id: REQ-B1-0094
+  source: Bilag 1 / tabell 23 / rad 7
+  type: AV
+  text: 'Metodikk for utvikling og vedlikehold av integrasjoner: Leverandøren skal ha et etablert metodeverk for utvikling,
+    tilpasning og vedlikehold av integrasjoner.'
+  response_requirement: 'Leverandøren skal beskrive (overordnet): Metodeverk, prosjektmetodikk og teknisk tilnærming. Rutiner
+    for versjonshåndtering og håndtering av endringer i eksterne API-er. Hvilke integrasjoner som leveres som standard, og
+    hvilke som krever utvikling. Ansvarsfordeling for oppsett, konfigurasjon og vedlikehold (kunde vs. leverandør). Prismodell
+    for utvikling av nye integrasjoner. Eventuelle begrensninger i API-arkitektur (skalerbarhet, ytelse, tilgjengelighet,
+    sikkerhet).'
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - billing
+  - security
+  - uu
+- id: REQ-B1-0095
+  source: Bilag 1 / tabell 24 / rad 1
+  type: A
+  text: Det skal være mulig å spore og dokumentere egenskaper ved tjenesteleveransens driftsdel.
+  response_requirement: Oppgi hvilke datasentre og hvilke fasiliteter som benyttes eller kan benyttes for å levere tjenesten.
+  acceptance_criteria: []
+  tags:
+  - observability
+  - ops
+  - sla
+- id: REQ-B1-0096
+  source: Bilag 1 / tabell 24 / rad 2
+  type: A
+  text: Eventuelle endringer i oppgitte datasentre og/eller i bruk av datasentre skal varsles til Kunden, se også Databehandleravtalens
+    bestemmelser knyttet til bruk av underdatabehandlere.
+  response_requirement: Bekreft at endringer i datasentre varsles i henhold til Databehandleravtale.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0097
+  source: Bilag 1 / tabell 24 / rad 3
+  type: AV
+  text: Datasenteroperatøren skal ha energibesparende tiltak for kjølingen av datasenteret som f.eks. styring og design av
+    lufttilførsel, temperaturoptimering, vedlikehold av kjølesystem mm.
+  response_requirement: Beskriv hvordan kravet er ivaretatt og i hvilken grad det er i tråd med «EU Code of conduct for datacenter
+    efficiency».
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0098
+  source: Bilag 1 / tabell 24 / rad 4
+  type: AV
+  text: Datasenteret skal benytte kjølemidler som gir lavest mulig drivhuspotensiale (GWP)
+  response_requirement: Angi GWP i overensstemmelse med utregningsmetoden som er beskrevet i bilag IV til forordning (EU)
+    nr. 517/2014.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0099
+  source: Bilag 1 / tabell 24 / rad 5
+  type: V
+  text: Det er ønskelig at spillvarmen fra datasenteret gjenbrukes, som f.eks. til fjernvarme.
+  response_requirement: Angi fasilitetens energigjenbruksfaktor (ERF) som en verdi mellom 0 og 1.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0100
+  source: Bilag 1 / tabell 24 / rad 6
+  type: V
+  text: Det er ønskelig at datasenteret benytter vedvarende energikilder.
+  response_requirement: Angi hvor stor del av datasenterets forbrukte energi som kommer fra vedvarende energikilder med anvendelse
+    av standarden REF med en verdi mellom 0 og 1.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0101
+  source: Bilag 1 / tabell 25 / rad 1
+  type: AV
+  text: Kunden har i normal arbeidstid behov for et kompetent brukerstøtteapparat som kan løsningen som supporteres
+  response_requirement: 'Beskriv supportapparatet deriblant: Tilgjengelighet Antall faste medarbeidere Deres kompetanse og
+    erfaring Gjennomsnittlig svartid Gjennomsnittlig løsningstid Support kanaler, eksempelvis epost, tlf. m.m.'
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - uu
+- id: REQ-B1-0102
+  source: Bilag 1 / tabell 25 / rad 2
+  type: A
+  text: Kunden har behov for support på norsk.
+  response_requirement: Bekreft at brukerstøtte leveres på norsk.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0103
+  source: Bilag 1 / tabell 26 / rad 1
+  type: AV
+  text: Det er Kunden som kategoriserer hva som er feil og hva som er endringsønsker. Kunden rapporterer opplevde feil. Leverandøren
+    kan ikke endre kategoriseringen uten Kundens samtykke.
+  response_requirement: Beskriv rutiner for mottak, behandling og retting av feil
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0104
+  source: Bilag 1 / tabell 26 / rad 2
+  type: A
+  text: Dersom Kunden er i tvil om feilen skyldes programvare, utstyr eller nettverk kan Kunden kreve at Leverandøren iverksetter
+    nødvendige tiltak for diagnostisering.
+  response_requirement: Bekreft at leverandør kan iverksette diagnostisering ved tvil om feilkilde.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0105
+  source: Bilag 1 / tabell 26 / rad 3
+  type: AV
+  text: Leverandøren plikter å informere Kunden om kjente feil, og å informere om hvordan og når feilen er tenkt løst samt
+    informasjon om eventuelle midlertidige løsninger.
+  response_requirement: Beskriv hvordan leverandør informerer om kjente feil, plan for løsning og midlertidige løsninger.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0106
+  source: Bilag 1 / tabell 26 / rad 4
+  type: A
+  text: I spesielle situasjoner vil det være hensiktsmessig med en midlertidig løsning for å omgå innmeldte feil. Dette skal
+    ikke påvirke opprinnelig kategorisering og heller ikke bli en permanent løsning for innmeldte feil.
+  response_requirement: Bekreft aksept av midlertidige løsninger uten å påvirke opprinnelig kategorisering.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0107
+  source: Bilag 1 / tabell 27 / rad 1
+  type: AV
+  text: Kunden har behov for en robust tjeneste med høy tilgjengelighet og rask responstid. Leverandøren skal garantere stabiliteten
+    på tjenesten. Manglende tilgjengelighet som skyldes forhold utenfor tjenesten levert av Leverandøren, eller planlagte
+    ekstraordinære driftsstanser, omfattes ikke av tilgjengelighetsgarantien.
+  response_requirement: 'Beskriv hvordan dette er ivaretatt i Bilag 4 eller i egen, vedlagte SLA. Beskrivelsen skal minimum
+    inneholde: Garantert oppetid Responstider på feilhåndtering etter kategori Responstid på brukerstøtte'
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - observability
+  - ops
+  - sla
+  - uu
+- id: REQ-B1-0108
+  source: Bilag 1 / tabell 27 / rad 2
+  type: AV
+  text: Ved brudd på tilgjengelighetsgarantien har Kunden rett på kompensasjon. Dersom bortfallet bare gjelder deler av tjenesten,
+    reduseres betalingsplikten forholdsmessig etter omfang, skyld og avbruddstid.
+  response_requirement: Forholdsmessig prisavslag ved brudd på tilgjengelighetsgarantien skal være angitt i Bilag 5 eller
+    vedlagt SLA. Metode for utregning skal også beskrives.
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - billing
+  - observability
+  - ops
+  - sla
+  - uu
+- id: REQ-B1-0109
+  source: Bilag 1 / tabell 27 / rad 3
+  type: A
+  text: Kunden har behov for varsling før planlagt nedetid.
+  response_requirement: Beskriv hvordan dette er ivaretatt i Bilag 4 eller i egen, vedlagte SLA.
+  acceptance_criteria: []
+  tags:
+  - observability
+  - ops
+  - sla
+- id: REQ-B1-0110
+  source: Bilag 1 / tabell 28 / rad 1
+  type: A
+  text: Nye versjoner av programmer er inkludert i avtalen. Når nye versjoner av programmer er utgitt, skal Leverandøren så
+    snart som mulig tilgjengeliggjøre disse for Kunden.
+  response_requirement: Bekreft at nye versjoner er inkludert og tilgjengeliggjøres for kunden.
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - uu
+- id: REQ-B1-0111
+  source: Bilag 1 / tabell 28 / rad 2
+  type: V
+  text: Ved oppgradering av software til nye versjoner skal kundens egenutviklede kodeverk, definerte standardbrukere og tilsvarende
+    bli med i oppgraderingen.
+  response_requirement: Bekreft at kundens kodeverk og standardbrukere tas med ved oppgradering, eller oppgi begrensninger.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0112
+  source: Bilag 1 / tabell 28 / rad 3
+  type: AV
+  text: Nye eller endrede funksjoner skal være ferdig utviklet og testet internt hos Leverandør før tilgjengeliggjøring til
+    Kunden.
+  response_requirement: Beskriv rutiner og metoder for utvikling og intern testing av nye/endrede funksjoner.
+  acceptance_criteria: []
+  tags:
+  - accessibility
+  - uu
+- id: REQ-B1-0113
+  source: Bilag 1 / tabell 28 / rad 4
+  type: A
+  text: Løsningen skal til enhver tid være kompatibel med eksisterende versjoner av annen eller tredjeparts programvare den
+    er integrert med.
+  response_requirement: Bekreft kompatibilitet med eksisterende tredjepartsprogramvare.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0114
+  source: Bilag 1 / tabell 28 / rad 5
+  type: AV
+  text: Dersom nye versjoner krever endringer i teknisk infrastruktur eller 3. partsverktøy, må dette varsles Kunden i god
+    tid, og endringene skal beskrives.
+  response_requirement: Beskriv rutiner for varsling og gjennomføring av nødvendige endringer i infrastruktur eller 3. partsverktøy.
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0115
+  source: Bilag 1 / tabell 28 / rad 6
+  type: V
+  text: Kunden ønsker mulighet til å påvirke utviklingen av løsningen.
+  response_requirement: ''
+  acceptance_criteria: []
+  tags: []
+- id: REQ-B1-0116
+  source: Bilag 1 / tabell 28 / rad 7
+  type: V
+  text: Det forventes at leverandøren gir informasjon om hvordan vedlikehold og oppdateringer av databasestrukturen vil bli
+    håndtert. Dette bør inkludere prosesser for feilretting, sikkerhetsoppdateringer, og eventuelle endringer i strukturen.
+  response_requirement: Beskriv rutiner for vedlikehold og oppdateringer av databasestruktur, inkl. feilretting og sikkerhetsoppdateringer.
+  acceptance_criteria: []
+  tags:
+  - security
